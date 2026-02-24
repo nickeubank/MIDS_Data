@@ -1,0 +1,287 @@
+{
+  "attributes": {
+    "history": "File written on September 12, 2025",
+    "institution": "George Washington University, Department of Environmental and Occupational Health",
+    "source": "Level 2 NO2 Version 2.4 algorithm from them Tropospheric Monitoring Instrument on the Copernicus Sentinel 5-Precursor satellite mission",
+    "Conventions": "CF-1.10",
+    "LongName": "HAQAST Sentinel-5P TROPOMI Nitrogen Dioxide (NO2) CONUS Monthly Level 3 0.01 x 0.01 Degree Gridded Data",
+    "ShortName": "HAQ_TROPOMI_NO2_CONUS_M_L3",
+    "title": "Sentinel-5P TROPOMI Nitrogen Dioxide (NO2) CONUS Monthly Level 3 0.01 x 0.01 Degree Gridded Data",
+    "VersionID": "2.4",
+    "Format": "netCDF",
+    "DataSetQuality": "TROPOMI pixel data filtered using a qa_value > 0.75; pixel data with qa_values <0.75 are excluded in the monthly average",
+    "IdentifierProductDOI": "10.5067/MKJG22GUOD34",
+    "IdentifierProductDOIAuthority": "https://doi.org/",
+    "ProcessingLevel": "Level 3",
+    "GranuleID": "HAQ_TROPOMI_NO2_CONUS_QA75_L3_Monthly_012025_V2.4_20250912.nc4",
+    "ProductionDateTime": "2025-09-12T00:00:00Z",
+    "SouthernmostLatitude": "24.50",
+    "NorthernmostLatitude": "49.49",
+    "WesternmostLongitude": "-124.75",
+    "EasternmostLongitude": "-66.76",
+    "RangeBeginningDate": "2025-01-01",
+    "RangeBeginningTime": "00:00:00.000000Z",
+    "RangeEndingDate": "2025-01-31",
+    "RangeEndingTime": "23:59:59.999999Z",
+    "comment": "File produced by Dan Goldberg, George Washington University, Email: dgoldberg@gwu.edu",
+    "references": "Goldberg, D. L., Anenberg, S. C., Kerr, G. H., Mohegh, A., Lu, Z., & Streets, D. G. (2021). TROPOMI NO2 in the United States: A Detailed Look at the Annual Averages, Weekly Cycles, Effects of Temperature, and Correlation With Surface NO 2 Concentrations. Earth\u2019s Future, 9(4), e2020EF001665. https://doi.org/10.1029/2020EF001665"
+  },
+  "zarr_format": 3,
+  "consolidated_metadata": {
+    "kind": "inline",
+    "must_understand": false,
+    "metadata": {
+      "Latitude": {
+        "shape": [
+          2500
+        ],
+        "data_type": "float32",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              2500
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "latitude, center of the grid cell",
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "_FillValue": "AAAAAAAA+H8="
+        },
+        "dimension_names": [
+          "Latitude"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "Longitude": {
+        "shape": [
+          5800
+        ],
+        "data_type": "float32",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              5800
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "longitude, center of the grid cell",
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "_FillValue": "AAAAAAAA+H8="
+        },
+        "dimension_names": [
+          "Longitude"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "month": {
+        "shape": [
+          11
+        ],
+        "data_type": "int64",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              11
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": 0,
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "units": "days since 2025-01-01 00:00:00",
+          "calendar": "proleptic_gregorian"
+        },
+        "dimension_names": [
+          "month"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "Number_obs": {
+        "shape": [
+          11,
+          2500,
+          5800
+        ],
+        "data_type": "float32",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              1,
+              2500,
+              5800
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "number of valid pixels used for the average",
+          "units": "count",
+          "standard_name": "number_of_observations",
+          "_FillValue": "AAAAAAA4j8A="
+        },
+        "dimension_names": [
+          "month",
+          "Latitude",
+          "Longitude"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "Tropospheric_NO2": {
+        "shape": [
+          11,
+          2500,
+          5800
+        ],
+        "data_type": "float32",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              1,
+              2500,
+              5800
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "Tropospheric vertical column NO2 density",
+          "units": "molec cm-2",
+          "standard_name": "troposphere_mole_content_of_nitrogen_dioxide",
+          "_FillValue": "AAAAAAA4j8A="
+        },
+        "dimension_names": [
+          "month",
+          "Latitude",
+          "Longitude"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      }
+    }
+  },
+  "node_type": "group"
+}
